@@ -1,4 +1,4 @@
-USE [SalesInventoryII]
+USE [db]
 GO
 
 SELECT 
