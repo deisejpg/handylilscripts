@@ -5,7 +5,7 @@ from pathlib import Path
         This script checks whether the Illumina Basespace analysis performed 
     for the BRCA Ampliseq Panel was somatic or germline. The information
     is printed on the screen and can be used to rename the files accordingly.
-    This script was used for the data order 393224 in June 2024.
+    This script was used for the data order XXXXX in June 2024.
 '''
 
 def check_variant_type(path):
