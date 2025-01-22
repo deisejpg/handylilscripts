@@ -1,4 +1,4 @@
-USE [SalesInventoryII]
+USE [db]
 GO
 
 SELECT localView.[Case ID]
@@ -20,12 +20,12 @@ SELECT localView.[Case ID]
 	   ,remoteViewB.[ImageID]
        ,remoteViewB.[Magnification]
 
-			FROM [dbo].[SalesInventorySearchAllPostAperio] AS localView
+			FROM [dbo].[tb] AS localView
 			
 			-- full outer join to get everything from localview that matches the conditions below
-			FULL OUTER JOIN [aperio_server_upgrade].[AperioIntegrationObjects].[dbo].[ImageLookup] AS remoteViewA 
+			FULL OUTER JOIN [server].[IntegrationObjects].[dbo].[tb2] AS remoteViewA 
 				ON localView.[Com ID] = remoteViewA.[ComID]
-			FULL OUTER JOIN [aperio_server_upgrade].[AperioIntegrationObjects].[dbo].[ImageMetaData] AS remoteViewB
+			FULL OUTER JOIN [server].[IntegrationObjects].[dbo].[tb3] AS remoteViewB
 				ON remoteViewA.[ImageId] = remoteViewB.[ImageID]
 
 			-- selecting only Asian and European countries
