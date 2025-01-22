@@ -33,7 +33,7 @@ check_all_vcf_files(current_directory)
 #germline in 1192924B-4004_ds.bcc3b4bc4a5c463095dd56c54abc7b58\1192924B-4004_S2.vcf.gz: ##FILTER=<ID=MultiAllelicSite,Description="Variant does not conform to diploid model">
 #somatic in 1192924B-4004_ds.dfd7aed20c2f465c9003927fb909c029\1192924B-4004_S2.genome.vcf.gz: ##Pisces_cmdline=""-BamPaths /data/scratch/RunFolder/Analysis/Temp_03-VariantCalling/geminiBams/1192924B-4004_S2.bam -GenomePaths /data/scratch/RunFolder/Analysis/Genome/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta -gVCF True -OutFolder /data/scratch/RunFolder/Analysis/Temp_03.03-VariantCalling.VariantCalling/1192924B-4004 -i /data/scratch/RunFolder/Analysis/Temp_03.03-VariantCalling.VariantCalling/interval/1192924B-4004_S2.padded.intervals.picard -CallMNVs True -MaxMNVLength 3 -MaxGapBetweenMNV 1 -MinimumFrequency 0.01 -MinBaseCallQuality 20 -MaxVariantQScore 100 -MinVariantQScore 20 -CrushVcf False -MinDP 10 -ReportNoCalls True -Ploidy somatic -EnableSingleStrandFilter False -MinDPFilter 10 -MaxAcceptableStrandBiasFilter 0.5 -VariantQualityFilter 30 -MinVariantFrequencyFilter 0.05 -RMxNFilter 3,6,0.20 -MaxNumThreads 9 -ThreadByChr True -UseStitchedXD True""
 
-# Info used to decide whether the file was somatic or germlines
+# Info used to decide whether the file was somatic or germline
 # "-Ploidy" is either somatic or diploid
 # ##fileformat=VCFv4.1
 ##fileDate=20220127
